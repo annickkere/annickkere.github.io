@@ -1,0 +1,469 @@
+/* My Portfolio style file */
+
+/* Importing My Portfolio Font Family from Google Fonts || "poppins"*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ----------------------------------------------------------- */
+
+
+/* Defining My Portfolio Main Colors */
+:root{
+    --my-primary-color: #ffb703;
+    --my-secondary-color: #000000;
+    --my-third-color: #fffffe;
+    --my-fourth-color: #eeeeee;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* Applying style to my entire document */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* To delete list and link decoration*/
+    /* For Dots in listed- items(li tags) */
+    list-style-type: none;
+    /* For links underlining(a tags) */
+    text-decoration: none;
+    /* Including the padding and border in html elements total widths and heights */
+    box-sizing: border-box;
+    /* Font Family*/
+    /* In case, it doesn't find "poppins", it will replace the font family by "sans-serif" */
+    font-family: poppins, sans-serif;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* Applying style to body tag */
+body{
+    /* Max Width */
+    width: 100%;
+    /* Min Height */
+    min-height: 100vh;
+    /* Background Color */
+    background-color: var(--my-third-color);
+}
+
+
+
+/* Header Style */
+header{
+    padding: 40px 80px;
+    background-color: var(--my-secondary-color);
+}
+
+/* Header Nav Style */
+nav{
+    /* Put all nav tabs at the same level or height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 50px;
+  }
+
+/* Logo Style */
+#logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--my-third-color);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#logo span{
+    color: var(--my-primary-color);
+}
+
+#menu ul{
+    display: flex;
+}
+
+#menu li{
+    font-weight: 500;
+}
+
+#menu li a{
+    color: var(--my-third-color);
+}
+
+#menu li:hover a{
+    color: var(--my-primary-color);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/*---------Section 1 Style--------*/
+#introSection{
+    background-color: var(--my-third-color);
+}
+
+.divIntro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 20px;
+}
+
+/* Introduction Left Div Width */
+.introLeft{
+    width: 50%;
+}
+
+/* Introduction Left Div Title h1 */
+.introLeft h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--my-secondary-color);
+}
+
+/* Introduction Left Div greeeting span */
+#greeting{
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+#greeting::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 30px;
+    bottom: 10px;
+    background-color: var(--my-primary-color);
+}
+
+/* Introduction Left Div Paragraph */
+.introLeft p{
+    font-size: 1.2em;
+    color: var(--my-secondary-color);
+    text-align: justify;
+    line-height: 1.7em;
+}
+
+/* My Functions Font color */
+#myFunction {
+    color: var(--my-primary-color);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/*---------Section 2 Style--------*/
+#aboutSection{
+    background-color: var(--my-fourth-color);
+}
+
+.divAbout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 20px;
+    gap: 50px;
+}
+
+.aboutLeft p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.aboutLeft span{
+    color: var(--my-primary-color);
+    font-weight: bold;
+}
+
+.aboutLeft button{
+    margin-top: 0px;
+}
+
+.divAbout img{
+    width: 30%;
+    height: 30%;
+    border-radius:50%;
+    border: 5px solid var(--my-primary-color);
+    background:var(--my-third-color);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/*---------Section 3 Style--------*/
+#projectSection{
+    background-color: var(--my-third-color);
+}
+
+.divProject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.project{
+    display: block;
+    margin: 30px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--my-fourth-color);
+}
+
+.technology{
+    padding: 30px 0px 0px 0px;
+    font-weight: bold;
+}
+
+
+
+/*---------Section 4 Style--------*/
+#skillSection{
+    background-color: var(--my-fourth-color);
+}
+
+.skillType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.softSkill, .hardSkill{
+    display: block;
+    width: 43%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--my-third-color);
+}
+
+.skillType span{
+    font-weight: bold;
+}
+
+.skillType li{
+    text-align: left;
+}
+
+.skillType ul{
+    padding: 10px;
+
+}
+
+/* Progress Bars Style */
+progress {
+    /* Set Progress Tag value color to my primary color */
+    accent-color:var(--my-primary-color);
+    /* Set Progress Tag value color to my primary color for Browser Mozilla Firefox*/
+    background-color:var(--my-fourth-color);
+    /* Get rid of website stylesheet Weird green grey progressbar */
+    -webkit-appearence:none;
+    border-radius: 7px;
+    height: 8px;
+    width: 100%;
+    }
+
+/* Set the background color for Progress Bar*/
+progress::-webkit-progress-bar {
+    background-color:var(--my-fourth-color);
+    border-radius: 7px;
+}
+  
+/* Set the Progress Bar value color */
+progress::-webkit-progress-value{
+    background-color:var(--my-primary-color);
+    border-radius: 7px;
+}
+    
+/* Set the progress value color for Mozilla Firefox */
+progress::-moz-progress-bar {
+    background-color:var(--my-primary-color);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/*---------Section 5 Style--------*/
+/* Form Style */
+#formSection{  
+    background-color: var(--my-secondary-color);
+    color: var(--my-third-color);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+form input, form textarea{
+    border-radius: 5px;
+    border: 3px solid var(--my-primary-color);
+    padding: 5px;
+}
+
+textarea {
+    height: 250px;
+    resize: none;
+}
+
+form button{
+    margin: auto;
+    font-weight: bold;
+}
+
+form button:hover{
+    background-color: var(--my-third-color);
+    color: var(--my-secondary-color);
+}
+
+/* Form Titles h1 and h2 */
+.formTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formTitle h2{
+    color: white;
+    font-weight: 400;
+    font-size: 1.9em;
+}
+
+.formTitle h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.formTitle span{
+    color: var(--my-primary-color);
+    font-weight: bold;
+}
+
+/*Form Firstname and Lastname */
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    width: 45%;
+}
+/* Form Email Subject and Message */
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.moreInfo textarea{
+    margin-top: 10px;
+}
+
+.moreInfo label{
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Sections Main Style */
+section{
+    padding: 80px;
+}
+/* Sections Title H2 */
+h2{
+    color: var(--my-primary-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Main Buttons Style */
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: var(--my-primary-color);
+    color: var(--my-third-color);
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin: 15px 5px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Buttons hover color */
+button:hover{
+    background-color: var(--my-secondary-color);
+}
+
+/* Main Buttons anchor color style */
+button a{
+    color: var(--my-third-color);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Footer Style */
+footer{
+    display: flex;
+    padding: 40px 80px;
+    background-color: var(--my-third-color);
+    justify-content: space-between;
+    color: var(--my-secondary-color);
+}
+
+#footerLeft span{
+    color: var(--my-primary-color);
+    font-weight: bold;
+}
+
+/* Manage Our Form Submission */
+
+/* Hiding our Form */
+.hideForm{
+    display: none;
+}
+
+/* ErrorMessage Span Style*/
+#errorMessage{
+    font-size: 2em;
+    padding: 0px 10px;
+    font-weight: 800;
+}
+
+.divError{
+    background-color: var(--my-primary-color);
+    margin: auto;
+}
+
+/* formSection New Style after form submissions*/
+.thank{
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+.thank span{
+    color: var(--my-primary-color);
+}

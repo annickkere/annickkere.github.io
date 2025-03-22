@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Annick KERE</title>
+    <!-- Linking my css file to html file -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media_screen.css">
+     <!-- Load library from the CDN -->
+     <script src="script/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+     <header>
+            <!-- Navigation Tag -->
+            <nav>
+                <!-- The logo -->
+                <div id="logo">
+                    KERE<span>Annick</span>
+                </div>
+                <!-- The Menu -->
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#aboutSection">À propos</a></li>
+                        <li><a href="#projectSection">Projets</a></li>
+                        <li><a href="#skillSection">Compétences</a></li>
+                        <li><a href="#formSection">Contact</a></li>
+                    </ul>      
+                </div>    
+            </nav>
+        </header>
+
+    <!-- Main -->
+     <main>
+        <!-- The main tag contains 5 sections -->
+        <!-- Section 1 -->
+        <!-- A short introduction of me -->
+        <section id="introSection">
+            <div class="divIntro">
+                <div class="introLeft">
+                    <span id="greeting">Hello</span>
+                    <h1>Je suis <span id="myFunction"></span></h1>
+                    <!-- Paragraphe -->
+                    <p>Ingénieure | Développeuse | Entrepreneure | YouTubeuse passionnée par le Web, les TIC et le Design !</p>
+                    <!-- Button -->
+                    <button class="projectButton"><a href="#projectSection">Voir Mes Projets</a></button>
+                </div>
+                <img src="image/splash.png" title="This is a femal developer !" alt="Woman Developer Illustration">  
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <!-- All about me -->
+        <section id="aboutSection">
+            <h2>À propos</h2>
+            <div class="divAbout">
+                <div class="aboutLeft">
+                    <p>Je m'appelle <span>Kere</span>, passionnée par la <br> création de sites web modernes et interactifs.</p>
+                    <p>Je suis actuellement étudiante en <span>développement web</span>,<br> et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+                    <p>J'adore transformer mes idées en projets concrets <br>et expérimenter avec les nouvelles technologies.</p>
+                    <button>
+                        <a href="file/cv.pdf" download="CV-KERE-Annick"> Télécharger Mon CV</a>  
+                    </button>
+                </div>
+                <img src="image/kere.png" title="KERE Annick Picture" alt="This is My Profile Picture...">
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <!-- My Projects -->
+        <section id="projectSection">
+            <h2>Mes Projets</h2>
+            <div class="divProject">
+                <div class="project">
+                    <p>Un Mini-Jeu en JavaScript qui utilise des évènements DOM.</p>
+                    <p class="technology">HTML5 | CSS3 | JavaScript</p>
+                    <button><a href="https://www.google.com/">Voir</a></button>
+                </div>
+
+                <div class="project">
+                    <p>Un Mini-Jeu en JavaScript qui utilise des évènements DOM.</p>
+                    <p class="technology">HTML5 | CSS3 | JavaScript</p>
+                    <button><a href="https://www.google.com/">Voir</a></button>
+                </div>
+
+                <div class="project">
+                    <p>Un Mini-Jeu en JavaScript qui utilise des évènements DOM.</p>
+                    <p class="technology">HTML5 | CSS3 | JavaScript</p>
+                    <button><a href="https://www.google.com/">Voir</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <!-- My Skills -->
+        <section id="skillSection">
+            <h2>Mes Compétences</h2>
+            <div class="skillType">
+                <div class="softSkill">
+                    <span>Soft Skills</span>
+                    <ul>
+                        <li>Esprit d'équipe</li>
+                        <progress value="70" max="100"></progress>
+                        <li>Adaptabilité</li>
+                        <progress value="65" max="100"></progress>
+                        <li>Organisation</li>
+                        <progress value="80" max="100"></progress>
+                    </ul>
+                </div>
+                <div class="hardSkill">
+                    <span>Hard Skills</span>
+                    <ul>
+                        <li>HTML</li>
+                        <progress value="70" max="100"></progress>
+                        <li>CSS</li>
+                        <progress value="50" max="100"></progress>
+                        <li>JavaScript</li>
+                        <progress value="50" max="100"></progress>
+                        <li>VsCode</li>
+                        <progress value="60" max="100"></progress>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <!-- My Contact Form -->
+        <section id="formSection">
+            <form name="contactForm" novalidate>
+                <!-- Displaying our error message -->
+                <div class="divError">
+                </div>
+
+                <div class="formTitle">
+                    <h1>Vous avez un <span>projet</span> en  tête ?</h1>
+                    <h2>N'hésitez pas à me <span>contacter</span> !</h2>
+                </div>
+                
+                <div class="name">
+                    <div class="inputColumn">
+                        <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Doe" minlength="2">
+                    </div>
+                    
+                    <div class="inputColumn">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="John" minlength="2">
+                    </div>
+                    
+                </div>
+                    
+                <div class="moreInfo">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" name="sujet" id="sujet" placeholder="Développement d'un Site Vitrine" minlength="3">
+
+                    <textarea name="message" id="message" placeholder="Ecrivez Votre Message Ici !"></textarea>
+                </div>
+                
+                <button id="bouton">Envoyer</button>
+            </form>
+        </section>
+     </main>
+
+    <!-- Footer -->
+     <footer>
+        <div id="footerLeft">
+            Designed by<span> Annick</span> with HTML CSS JS
+        </div>
+    
+        <div id="footerRight">
+            Tous Droits Réservés - 2025
+        </div>
+     </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Animated words || It concerns my occupations -->
+    <!-- Setup and Start animation -->
+    <script>
+        let typed = new Typed('#myFunction', {
+        strings: ['Annick', 'Ingénieure', 'Développeuse', 'Entrepreneure', 'YouTubeuse'],
+        loop: 1,
+        // We are programming displaying time
+        startDelay: 100,
+        backSpeed: 100,
+        typeSpeed: 50,
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Media Screen Style */
+/* For Screen Size Between 0 to 960px */
+@media screen and (max-width: 960px) {
+    /* Header */
+    header{
+        padding: 20px 40px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo{
+        font-size: 15px;
+    }
+
+    #menu ul{
+        display: flex;
+        margin: auto;
+    }
+
+    #menu li{
+        margin: 0px 8px;
+    }
+
+    #menu a{
+        font-size: 0.5em;
+        padding: 5px 0px; 
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    /* Introduction Section */
+    .divIntro{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .divIntro .introLeft{
+        width: 100%;
+    }
+
+    .divIntro img{
+        width: 80%;
+    }
+
+    .introLeft{
+        display: block;
+        text-align: center;
+    }
+
+    .introLeft h1, .introLeft #greeting{
+        font-size: 1.6em;
+    }
+
+    .introLeft p{
+        font-size: 0.98em;
+        text-align: center;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    /* About Section */
+
+    .aboutLeft{
+        display: block;
+        text-align: center;
+    }
+
+    .aboutLeft p{
+        text-align: center;
+    }
+
+    .divAbout{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    .divAbout img{
+        width: 50%;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    /* Project Section */
+    .divProject{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .project{
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    /* Skill Section */
+    .skillType{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .softSkill, .hardSkill{
+       width: 100%;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+    
+    /* Form Style */
+    form{
+        width: 100%;
+    }
+
+    /* ---------------------------------------------------------------------------------- */ 
+
+    /* Footer Style */
+    footer{
+        font-size: 0.5em;
+        padding: 20px 40px;
+    }
+
+    /* ---------------------------------------------------------------------------------- */ 
+
+    /* Sections Main Padding */
+    section{
+        padding: 20px;
+    }
+
+    /* Error Message Font-Size */
+    #errorMessage{
+        font-size: 1em;
+    }
+
+    /* Thanking Message Font-Size */
+    .thank{
+        font-size: 1.5em;
+    }
+
+    }
+
+    
+    
